@@ -1,0 +1,22 @@
+{
+  "block.create_italian_industries.tomato_sauce": "Tomato Sauce",
+  "block.create_italian_industries.whey": "Whey",
+  "block.create_italian_industries.liquid_fertilizer": "Liquid Fertilizer",
+  "fluid.create_italian_industries.tomato_sauce": "Tomato Sauce",
+  "fluid.create_italian_industries.whey": "Whey",
+  "fluid.create_italian_industries.liquid_fertilizer": "Liquid Fertilizer",
+  "fluid_type.create_italian_industries.tomato_sauce": "Tomato Sauce",
+  "fluid_type.create_italian_industries.whey": "Whey",
+  "fluid_type.create_italian_industries.liquid_fertilizer": "Liquid Fertilizer",
+  "item.create_italian_industries.tomato_sauce_bucket": "Tomato Sauce Bucket",
+  "item.create_italian_industries.whey_bucket": "Whey Bucket",
+  "item.create_italian_industries.liquid_fertilizer_bucket": "Liquid Fertilizer Bucket",
+  "item.create_italian_industries.salt": "Salt",
+  "item.create_italian_industries.curds": "Curds",
+  "item.create_italian_industries.cheese": "Cheese",
+  "item.create_italian_industries.shredded_cheese": "Shredded Cheese",
+  "item.create_italian_industries.crust": "Crust",
+  "item.create_italian_industries.uncooked_pizza": "Uncooked Pizza",
+  "item.create_italian_industries.pizza": "Pizza",
+  "item.create_italian_industries.incomplete_uncooked_pizza": "Incomplete Uncooked Pizza"
+}

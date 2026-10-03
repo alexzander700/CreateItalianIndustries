@@ -1,0 +1,9 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    { "tag": "c:foods/dough" }
+  ],
+  "results": [
+    { "id": "create_italian_industries:crust" }
+  ]
+}

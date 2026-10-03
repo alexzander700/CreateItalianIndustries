@@ -1,0 +1,41 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create_italian_industries:crust"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "create_italian_industries:uncooked_pizza"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        { "item": "create_italian_industries:incomplete_uncooked_pizza" },
+        {
+          "type": "neoforge:single",
+          "amount": 250,
+          "fluid": "create_italian_industries:tomato_sauce"
+        }
+      ],
+      "results": [
+        { "id": "create_italian_industries:incomplete_uncooked_pizza" }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "create_italian_industries:incomplete_uncooked_pizza" },
+        { "item": "create_italian_industries:shredded_cheese" }
+      ],
+      "results": [
+        { "id": "create_italian_industries:incomplete_uncooked_pizza" }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "create_italian_industries:incomplete_uncooked_pizza"
+  }
+}

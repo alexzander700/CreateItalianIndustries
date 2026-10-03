@@ -1,0 +1,13 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    { "item": "create_italian_industries:cheese" }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "create_italian_industries:shredded_cheese"
+    }
+  ],
+  "processing_time": 100
+}

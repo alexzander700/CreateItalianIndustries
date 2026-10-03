@@ -1,0 +1,17 @@
+{
+  "type": "create:compacting",
+  "neoforge:conditions": [
+    { "type": "neoforge:mod_loaded", "modid": "create_crops" }
+  ],
+  "ingredients": [
+    { "item": "create_crops:tomato" },
+    { "item": "create_crops:tomato" },
+    { "item": "create_crops:tomato" }
+  ],
+  "results": [
+    {
+      "amount": 250,
+      "id": "create_italian_industries:tomato_sauce"
+    }
+  ]
+}

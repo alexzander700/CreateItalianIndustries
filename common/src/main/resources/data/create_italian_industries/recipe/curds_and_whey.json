@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    { "item": "create_italian_industries:salt" },
+    {
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "c:milk"
+    }
+  ],
+  "results": [
+    { "id": "create_italian_industries:curds" },
+    {
+      "amount": 200,
+      "id": "create_italian_industries:whey"
+    }
+  ]
+}

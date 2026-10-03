@@ -1,0 +1,9 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    { "item": "create_italian_industries:curds" }
+  ],
+  "results": [
+    { "id": "create_italian_industries:cheese" }
+  ]
+}

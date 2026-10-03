@@ -34,5 +34,21 @@ versionRange = "[13.0.11,)"
 ordering = "AFTER"
 side = "BOTH"
 
+[[dependencies.create_italian_industries]]
+modId = "create"
+type = "required"
+versionRange = "[6.0.10,)"
+ordering = "AFTER"
+side = "BOTH"
+
+# Tomatoes come from Create: Crops, so Tomato Sauce is only craftable when it is installed.
+# "[0,)" because a "1.0-SNAPSHOT" version sorts below 1.0 and would be rejected by "[1.0,)".
+[[dependencies.create_italian_industries]]
+modId = "create_crops"
+type = "optional"
+versionRange = "[0,)"
+ordering = "AFTER"
+side = "BOTH"
+
 [[mixins]]
 config = "create_italian_industries.mixins.json"
