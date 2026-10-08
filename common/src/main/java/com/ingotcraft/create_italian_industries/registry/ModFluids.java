@@ -12,8 +12,14 @@ import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.Fluid;
 
 /**
- * All three fluids are tuned like water: same density/viscosity, same flow distance and tick delay, and they
- * make new source blocks the way water does. None of them is in the minecraft:water tag, so they don't
+ * All three fluids are valuable, crafted resources, so they are deliberately NOT water-like:
+ *  - convertToSource(false): vanilla water turns a gap between two source blocks into a new source
+ *    ("infinite water"). With this off, you can never duplicate the fluid by arranging buckets.
+ *  - dropOff(2) / slopeFindDistance(2): they spread about as far as lava does in the Overworld
+ *    (a few blocks) instead of water's 7, so a bucket makes a small puddle, not a lake.
+ *  - tickDelay: they flow slowly, like thick liquids (water is 5, Overworld lava is 30). Tomato Sauce is the
+ *    thickest and matches lava at 30; Whey and Liquid Fertilizer are a little runnier at 20.
+ * Same density/viscosity as water, and none of them is in the minecraft:water tag, so they don't
  * hydrate farmland, extinguish fires or count as water for other mods. Textures are fully opaque, and fluids
  * render in the solid layer unless registered otherwise, so nothing else is needed to keep them opaque.
  *
@@ -35,10 +41,10 @@ public final class ModFluids {
             .density(1000)
             .viscosity(1000)
             .luminosity(0)
-            .slopeFindDistance(4)
-            .dropOff(1)
-            .tickDelay(5)
-            .convertToSource(true);
+            .slopeFindDistance(2)
+            .dropOff(2)
+            .tickDelay(30)
+            .convertToSource(false);
 
     public static final RegistrySupplier<FlowingFluid> SOURCE = FLUIDS.register("tomato_sauce",
             () -> new ArchitecturyFlowingFluid.Source(ATTRIBUTES));
@@ -56,10 +62,10 @@ public final class ModFluids {
             .density(1000)
             .viscosity(1000)
             .luminosity(0)
-            .slopeFindDistance(4)
-            .dropOff(1)
-            .tickDelay(5)
-            .convertToSource(true);
+            .slopeFindDistance(2)
+            .dropOff(2)
+            .tickDelay(20)
+            .convertToSource(false);
 
     public static final RegistrySupplier<FlowingFluid> WHEY = FLUIDS.register("whey",
             () -> new ArchitecturyFlowingFluid.Source(WHEY_ATTRIBUTES));
@@ -77,10 +83,10 @@ public final class ModFluids {
             .density(1000)
             .viscosity(1000)
             .luminosity(0)
-            .slopeFindDistance(4)
-            .dropOff(1)
-            .tickDelay(5)
-            .convertToSource(true);
+            .slopeFindDistance(2)
+            .dropOff(2)
+            .tickDelay(20)
+            .convertToSource(false);
 
     public static final RegistrySupplier<FlowingFluid> FERTILIZER = FLUIDS.register("liquid_fertilizer",
             () -> new ArchitecturyFlowingFluid.Source(FERTILIZER_ATTRIBUTES));
